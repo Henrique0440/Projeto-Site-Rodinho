@@ -78,8 +78,8 @@ header button:hover {
     justify-content: center;
     align-items: center;
     /* min-width: 200px; */
-    width: 200px;
-    height: 200px;
+    width: 1500px;
+    height: 150px;
     padding: 0.8rem 0.5rem;
     background-color: rgba(139, 89, 24, 0.925);
     color: white;
