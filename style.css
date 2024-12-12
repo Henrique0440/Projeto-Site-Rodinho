@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-    display: flex;
+    display: fixed;
     justify-content: center;
     background-color: rgb(23, 117, 23);
     height: 50px;
