@@ -78,8 +78,8 @@ header button:hover {
     justify-content: center;
     align-items: center;
     /* min-width: 200px; */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     padding: 0.8rem 0.5rem;
     background-color: rgba(139, 89, 24, 0.925);
     color: white;
@@ -92,4 +92,11 @@ header button:hover {
 .card_product img{
     width: 150px;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px){
+    .card_product {
+    width: 150px;
+    height: 150px;
+    }
 }
