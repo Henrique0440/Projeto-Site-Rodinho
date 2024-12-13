@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     data.map((val, index) => {
                         main.innerHTML += `
                         <div id="${index}" class="card_product">
-                            <img src="https://i0.wp.com/pat.feldman.com.br/wp-content/uploads/2012/01/comida-caseira.jpg?fit=960%2C540&ssl=1" alt="">
+                            <img src="${val.link}" alt="">
                             <h3>${val.name}</h3>
                             <p>${val.description}</p>
-                            <a href="${val.link}" target="_blank">
+                            <p>R$ <strong>${val.price}<strong></p>
+                            <a href="#" target="_blank">
                                 <button id="">Cardapio</button>
                             </a>
                         </div>`
@@ -45,22 +46,4 @@ document.addEventListener('DOMContentLoaded', function () {
             verific = false
         }
     })
-
-    let lastScrollY = window.scrollY;
-    const menu = document.getElementById('menu');
-
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY < lastScrollY) {
-            // Rolando para cima
-            menu.classList.add('show');
-        } else {
-            // Rolando para baixo
-            menu.classList.remove('show');
-        }
-
-        lastScrollY = currentScrollY;
-    });
-
 })

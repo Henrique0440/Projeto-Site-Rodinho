@@ -54,7 +54,7 @@ header button:hover {
     background-color: rgb(1, 121, 1);
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -84,19 +84,95 @@ header button:hover {
     background-color: rgba(139, 89, 24, 0.925);
     color: white;
     text-align: center;
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.205);
     /* Sombra para destacar os cards */
 }
 
-.card_product img{
-    width: 150px;
+.card_product img {
+    width: 100px;
     border-radius: 50%;
+    margin: 10px;
 }
 
-@media only screen and (max-width: 600px){
+.card_product h3, p {
+    margin: 2px;
+}
+
+.card_product a button {
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(29, 102, 29);
+    width: 100px;
+    height: 30px;
+}
+
+.card_product a button:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+/* CONFIGURAÇÕES PAINEL */
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.884);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.603);
+}
+
+form input {
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    min-height: 40px;
+    border: b;
+}
+
+form textarea {
+    margin: 10px;
+    padding: 5px;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 40px;
+    max-height: 150px;
+}
+
+form button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 115, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.39);
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
     .card_product {
-    width: 150px;
-    height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* CONFIGURAÇÕES PAINEL */
+
+    form {
+        background-color: rgba(255, 255, 255, 0.884);
+        max-width: 400px;
+
     }
 }
