@@ -164,7 +164,7 @@ form button:hover {
 
 @media only screen and (max-width: 600px) {
     .card_product {
-        min-width: 300px;
+        min-width: 320px;
         min-height: 250px;
     }
 
